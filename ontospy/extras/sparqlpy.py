@@ -111,7 +111,7 @@ class SparqlEndpoint(object):
 
 		"""
 
-		lines = ["PREFIX %s: <%s>" % (k, r) for k, r in self.prefixes.iteritems()]
+		lines = ["PREFIX %s: <%s>" % (k, r) for k, r in self.prefixes.items()]
 		lines.extend(q.split("\n"))
 		query = "\n".join(lines)
 
